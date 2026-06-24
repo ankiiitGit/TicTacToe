@@ -178,6 +178,7 @@ This project was built with the assistance of AI.
 - Adding appropriate CSS.
 - Implementing Backend and Frontend Tests.
 - Writing ReadMe file.
+- Add summary to the existing methods for proper documentation.
 
 **Representative prompts:**
 - *"Add styling using plain CSS for the TicTacToe Board component, Scoreboard and Move-History."*
