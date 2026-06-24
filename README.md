@@ -3,6 +3,9 @@
 A browser-based Tic Tac Toe game with an **Angular** frontend and a **.NET Web API** backend, running locally. Players can play two-player or against a basic computer opponent, with move history, undo, win/draw detection, and a session scoreboard.
 
 ---
+<img width="574" height="658" alt="image" src="https://github.com/user-attachments/assets/3cd1fa04-8fc0-4b7e-a56b-5d79ddde5f0f" />
+
+---
 
 ## 1. Project Overview
 
