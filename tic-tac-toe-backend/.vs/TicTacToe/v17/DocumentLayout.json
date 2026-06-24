@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ankii\\source\\repos\\TicTacToe\\tic-tac-toe-backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D7F144A0-3814-4548-A2BA-3FA90EA86C86}|TicTacToe.Api\\TicTacToe.Api.csproj|c:\\users\\ankii\\source\\repos\\tictactoe\\tic-tac-toe-backend\\tictactoe.api\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7F144A0-3814-4548-A2BA-3FA90EA86C86}|TicTacToe.Api\\TicTacToe.Api.csproj|solutionrelative:tictactoe.api\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7F144A0-3814-4548-A2BA-3FA90EA86C86}|TicTacToe.Api\\TicTacToe.Api.csproj|c:\\users\\ankii\\source\\repos\\tictactoe\\tic-tac-toe-backend\\tictactoe.api\\controllers\\scoreboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7F144A0-3814-4548-A2BA-3FA90EA86C86}|TicTacToe.Api\\TicTacToe.Api.csproj|solutionrelative:tictactoe.api\\controllers\\scoreboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7F144A0-3814-4548-A2BA-3FA90EA86C86}|TicTacToe.Api\\TicTacToe.Api.csproj|c:\\users\\ankii\\source\\repos\\tictactoe\\tic-tac-toe-backend\\tictactoe.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7F144A0-3814-4548-A2BA-3FA90EA86C86}|TicTacToe.Api\\TicTacToe.Api.csproj|solutionrelative:tictactoe.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ScoreboardController.cs",
+              "DocumentMoniker": "C:\\Users\\ankii\\source\\repos\\TicTacToe\\tic-tac-toe-backend\\TicTacToe.Api\\Controllers\\ScoreboardController.cs",
+              "RelativeDocumentMoniker": "TicTacToe.Api\\Controllers\\ScoreboardController.cs",
+              "ToolTip": "C:\\Users\\ankii\\source\\repos\\TicTacToe\\tic-tac-toe-backend\\TicTacToe.Api\\Controllers\\ScoreboardController.cs",
+              "RelativeToolTip": "TicTacToe.Api\\Controllers\\ScoreboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T01:41:22.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GamesController.cs",
+              "DocumentMoniker": "C:\\Users\\ankii\\source\\repos\\TicTacToe\\tic-tac-toe-backend\\TicTacToe.Api\\Controllers\\GamesController.cs",
+              "RelativeDocumentMoniker": "TicTacToe.Api\\Controllers\\GamesController.cs",
+              "ToolTip": "C:\\Users\\ankii\\source\\repos\\TicTacToe\\tic-tac-toe-backend\\TicTacToe.Api\\Controllers\\GamesController.cs",
+              "RelativeToolTip": "TicTacToe.Api\\Controllers\\GamesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T01:41:21.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ankii\\source\\repos\\TicTacToe\\tic-tac-toe-backend\\TicTacToe.Api\\Program.cs",
+              "RelativeDocumentMoniker": "TicTacToe.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\ankii\\source\\repos\\TicTacToe\\tic-tac-toe-backend\\TicTacToe.Api\\Program.cs",
+              "RelativeToolTip": "TicTacToe.Api\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T01:38:35.241Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

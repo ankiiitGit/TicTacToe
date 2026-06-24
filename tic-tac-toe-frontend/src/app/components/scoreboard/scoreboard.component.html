@@ -1,0 +1,21 @@
+<div class="scoreboard">
+  <h3>Scoreboard</h3>
+  <div class="scores">
+    <div class="score x">
+      <span class="value">{{ scoreboard.xWins }}</span>
+      <span class="label">X Wins</span>
+    </div>
+    <div class="score o">
+      <span class="value">{{ scoreboard.oWins }}</span>
+      <span class="label">O Wins</span>
+    </div>
+    <div class="score d">
+      <span class="value">{{ scoreboard.draws }}</span>
+      <span class="label">Draws</span>
+    </div>
+  </div>
+  <!-- (click) emits the @Output event; the parent listens and calls the API. -->
+  <button class="btn btn-secondary" (click)="resetScoreboard.emit()">
+    Reset Scoreboard
+  </button>
+</div>

@@ -1,0 +1,94 @@
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.header h1 {
+  text-align: center;
+  margin: 0 0 20px;
+  letter-spacing: 1px;
+}
+
+/* ---- Mode selector ---- */
+.mode-selector {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.mode-btn {
+  padding: 8px 16px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.mode-btn.active {
+  background: #1e293b;
+  color: #ffffff;
+  border-color: #1e293b;
+}
+
+/* ---- Status banner ---- */
+.status {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  min-height: 1.6rem;
+}
+
+.status .result {
+  font-weight: 700;
+}
+
+.status .x { color: #2563eb; }
+.status .o { color: #dc2626; }
+
+/* ---- Controls ---- */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+/* ---- Side-by-side panels (scoreboard + history) ---- */
+.panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.error {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.loading {
+  text-align: center;
+  color: #64748b;
+}
+
+/* Responsive: stack the panels on narrow screens. */
+@media (max-width: 560px) {
+  .panels {
+    grid-template-columns: 1fr;
+  }
+}

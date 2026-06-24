@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "OZP2eEZy04w=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ankii\\source\\repos\\TicTacToe\\tic-tac-toe-backend\\TicTacToe.Api\\TicTacToe.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ankii\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.11\\microsoft.aspnetcore.openapi.9.0.11.nupkg.sha512",
+    "C:\\Users\\ankii\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

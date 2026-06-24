@@ -1,0 +1,79 @@
+<div class="page">
+  <header class="header">
+    <h1>Tic&nbsp;Tac&nbsp;Toe</h1>
+  </header>
+
+  <!-- Mode selector: switching mode starts a fresh game. -->
+  <div class="mode-selector">
+    <button
+      class="mode-btn"
+      [class.active]="mode === 'TwoPlayer'"
+      (click)="onModeChange('TwoPlayer')">
+      Two Player
+    </button>
+    <button
+      class="mode-btn"
+      [class.active]="mode === 'Computer'"
+      (click)="onModeChange('Computer')">
+      Play vs Computer
+    </button>
+  </div>
+
+  <!-- Show a friendly error if the backend is unreachable. -->
+  @if (error) {
+    <div class="error">{{ error }}</div>
+  }
+
+  <!-- Only render the game UI once we have a state from the backend. -->
+  @if (game) {
+    <!-- Status banner: whose turn, winner, or draw. -->
+    <div class="status">
+      @if (game.status === 'InProgress') {
+        <span>
+          Current turn:
+          <strong [class.x]="game.currentPlayer === 'X'"
+                  [class.o]="game.currentPlayer === 'O'">
+            {{ game.currentPlayer }}
+          </strong>
+        </span>
+      } @else if (game.status === 'Won') {
+        <span class="result">🎉 Player {{ game.winner }} wins!</span>
+      } @else {
+        <span class="result">It's a draw!</span>
+      }
+    </div>
+
+    <!-- Board child: pass data down via [..], listen for clicks via (..). -->
+    <app-board
+      [board]="game.board"
+      [winningCells]="game.winningCells"
+      [locked]="boardLocked"
+      (cellClick)="onCellClick($event)">
+    </app-board>
+
+    <!-- Game controls. -->
+    <div class="controls">
+      <button class="btn" (click)="onUndo()" [disabled]="!canUndo">
+        Undo Last Move
+      </button>
+      <button class="btn" (click)="onResetGame()" [disabled]="loading">
+        Reset Game
+      </button>
+    </div>
+
+    <div class="panels">
+      <section class="panel">
+        <app-scoreboard
+          [scoreboard]="game.scoreboard"
+          (resetScoreboard)="onResetScoreboard()">
+        </app-scoreboard>
+      </section>
+
+      <section class="panel">
+        <app-move-history [moves]="game.moves"></app-move-history>
+      </section>
+    </div>
+  } @else if (!error) {
+    <p class="loading">Loading game…</p>
+  }
+</div>

@@ -1,0 +1,25 @@
+<!--
+  @for is Angular's built-in loop (Angular 17+). It repeats the <button> for
+  every cell in `board`. `track $index` tells Angular to identify each item by
+  its position so it can update efficiently. $index is the current loop index.
+
+  Bindings used below:
+   - [class.x]="..."  -> adds the CSS class "x" only when the expression is true
+   - [disabled]="..." -> sets the button's disabled property
+   - (click)="..."    -> runs the method when clicked
+   - {{ cell }}       -> interpolation: prints the cell's value ('X', 'O', or nothing)
+-->
+<div class="board">
+  @for (cell of board; track $index) {
+    <button
+      class="cell"
+      [class.x]="cell === 'X'"
+      [class.o]="cell === 'O'"
+      [class.win]="winningCells.includes($index)"
+      [disabled]="cell !== null || locked"
+      (click)="onCellClick($index)"
+      [attr.aria-label]="'Cell ' + ($index + 1)">
+      {{ cell }}
+    </button>
+  }
+</div>

@@ -1,0 +1,30 @@
+<div class="move-history">
+  <h3>Move History</h3>
+
+  <!-- @if / @else is Angular's built-in conditional (Angular 17+). -->
+  @if (moves.length === 0) {
+    <p class="empty">No moves yet.</p>
+  } @else {
+    <table>
+      <thead>
+        <tr>
+          <th>Move</th>
+          <th>Player</th>
+          <th>Position</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (move of moves; track move.moveNumber) {
+          <tr>
+            <td>{{ move.moveNumber }}</td>
+            <td [class.x]="move.player === 'X'" [class.o]="move.player === 'O'">
+              {{ move.player }}
+            </td>
+            <!-- row/col are 0-based in the model; show 1-based to the user. -->
+            <td>Row {{ move.row + 1 }}, Column {{ move.col + 1 }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  }
+</div>

@@ -1,0 +1,39 @@
+.scoreboard {
+  text-align: center;
+}
+
+.scoreboard h3 {
+  margin: 0 0 12px;
+}
+
+.scores {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.score {
+  flex: 1;
+  padding: 12px 8px;
+  border-radius: 10px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.score .value {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.score .label {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.score.x .value { color: #2563eb; }
+.score.o .value { color: #dc2626; }
+.score.d .value { color: #64748b; }
